@@ -1,0 +1,12 @@
+ion-item.user-input {
+    --background: transparent;
+    --padding-start: 0;
+}
+
+.user-input {
+    margin: 5px 0;
+}
+
+.btn-submit {
+    margin-top: 20px;
+}

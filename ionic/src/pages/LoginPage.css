@@ -1,0 +1,38 @@
+.login-page-content {
+  --background: #121212;
+  color: #ffffff;
+}
+
+.mt-200 {
+    margin-top: 200px;
+}
+
+.login-form {
+  padding: 1rem;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.login-form ion-item {
+  --background: #2c2c2c;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.login-form ion-input {
+  color: #ffffff;
+}
+
+.ion-margin-top {
+  margin-top: 2rem !important;
+}
+
+.ion-button {
+  --background: #3a3a3a;
+  color: #ffffff;
+}
+
+.ion-button:hover {
+  --background: #4a4a4a;
+}
