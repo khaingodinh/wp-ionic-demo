@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, ToastController, LoadingController } from 'ionic-angular';
 import { SessionService } from '../../utils/sessionStore';
-import { LoginService } from '../../services/authService';
+import { LoginService } from '../../services/loginService';
 import { HomePage } from '../home/home';
 
 @Component({
@@ -42,8 +42,9 @@ export class LoginPage {
           });
           this.navCtrl.setRoot(HomePage);
         })
-        .catch(() => {
+        .catch((e) => {
           loading.dismiss();
+          alert(e.message);
           this.presentToast('Wrong username or password');
         });
     }

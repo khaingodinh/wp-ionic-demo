@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NativePageTransitions } from '@ionic-native/native-page-transitions';
 import { SessionService } from '../../utils/sessionStore';
-import { LoginService } from '../../services/authService';
+import { LoginService } from '../../services/loginService';
 import { UserService } from '../../services/userService';
 import { LoginPage } from '../../pages/login/login';
 import { IonicModule } from 'ionic-angular';

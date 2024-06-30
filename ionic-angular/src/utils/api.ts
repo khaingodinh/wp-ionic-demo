@@ -5,7 +5,7 @@ import { SessionService } from './sessionStore';
 
 @Injectable()
 export class ApiService {
-  private baseURL = 'http://18.139.140.123:8000/wp-json';
+  private baseURL = 'https://hoctotdanhphap.work.gd/wp-json';
 
   constructor(private http: HttpClient, private session: SessionService) {}
 
