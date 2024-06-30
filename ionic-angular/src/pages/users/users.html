@@ -1,0 +1,25 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>List Users</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="add-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content class="users-content">
+  <ion-list>
+    <ion-list-header class="bg">
+      <div class="header-grp">
+        <h2>List Users</h2>
+        <ion-icon (click)="openModal()" name="add-circle"></ion-icon>
+      </div>
+    </ion-list-header>
+    <ion-item *ngFor="let user of users" class="bg">
+      <ion-label>{{ user.first_name }} {{ user.last_name }}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-spinner *ngIf="isLoading" name="circles"></ion-spinner>
+</ion-content>

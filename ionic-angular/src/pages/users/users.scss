@@ -1,0 +1,16 @@
+.users-content {
+    margin-top: 55px;
+}
+
+.header-grp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    ion-icon {
+        margin-left: auto;
+        font-size: 30px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+}

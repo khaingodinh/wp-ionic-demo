@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Create User</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="closeModal()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding user-form">
+  <ion-item>
+    <ion-label stacked>First Name</ion-label>
+    <ion-input type="text" [(ngModel)]="firstName" placeholder="Enter your first name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Last Name</ion-label>
+    <ion-input type="text" [(ngModel)]="lastName" placeholder="Enter your last name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Email</ion-label>
+    <ion-input type="email" [(ngModel)]="email" placeholder="Enter your email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Username</ion-label>
+    <ion-input type="text" [(ngModel)]="username" placeholder="Enter your username"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password" placeholder="Enter your password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Confirm Password</ion-label>
+    <ion-input type="password" [(ngModel)]="confirmPassword" placeholder="Enter your confirm password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Description</ion-label>
+    <ion-textarea [(ngModel)]="description" placeholder="Enter your description"></ion-textarea>
+  </ion-item>
+  <button class="btn-submit" ion-button full (click)="submit()">Submit</button>
+</ion-content>

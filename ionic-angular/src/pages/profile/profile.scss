@@ -1,0 +1,68 @@
+.profile-page {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-page .profile-header {
+    background-color: #1f1f1f;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-page .profile-header .avatar {
+    width: 100px;
+    height: 100px;
+    margin-bottom: -60px;
+    margin-right: 0;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+.profile-panel {
+    -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+.profile-page .profile-info {
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-info-item {
+    display: flex;
+    width: 300px;
+    padding: 10px;
+}
+
+.profile-name {
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.profile-info-item_label {
+    color: #ccc;
+    flex: 0.4;
+}
+
+.profile-info-item_text {
+    flex: 0.6;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .profile-panel {
+        width: 100%;
+        margin: 20px;
+    }
+}

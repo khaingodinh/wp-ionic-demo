@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="user" class="profile-page">
+    <div class="profile-panel">
+      <div class="profile-header">
+        <ion-avatar class="avatar">
+          <img alt="avatar" src="https://ionicframework.com/docs/img/demos/avatar.svg"/>
+        </ion-avatar>
+      </div>
+      <div class="profile-info">
+        <h4 class="profile-name">{{ user?.first_name }} {{ user?.last_name }}</h4>
+        <div class="profile-info-item">
+          <div class="profile-info-item_label">Email</div>
+          <div class="profile-info-item_text">{{ user?.email }}</div>
+        </div>
+        <div class="profile-info-item">
+          <div class="profile-info-item_label">Description</div>
+          <div class="profile-info-item_text">{{ user?.description }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ion-spinner *ngIf="isLoading" name="circles"></ion-spinner>
+</ion-content>

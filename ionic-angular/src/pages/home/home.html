@@ -1,0 +1,44 @@
+<ion-menu [content]="content">
+  <ion-content>
+    <ion-list>
+      <h2 class="title-menu">Menu</h2>
+      <button class="btn-menu" ion-item (click)="goToUsers()" lines="none">
+        <ion-icon name="person"></ion-icon>
+        &nbsp;&nbsp;
+        <span class="menu-label">Users</span>
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>WP Ionic Demo App</ion-title>
+    <ion-buttons right>
+      <button (click)="toggleProfileMenu()" #avatar ion-button>
+        <img class="avatar" src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="avatar">
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<div #profileMenu [style.visibility]="!isMenuOpen ? 'hidden' : 'visible'" class="profile-menu">
+  <ul>
+    <li>
+      <button class="btn-profile-menu" ion-item (click)="goToProfile()" lines="none">
+        <ion-icon name="person"></ion-icon>
+        <span class="menu-label">Profile</span>
+      </button>
+    </li>
+    <li>
+      <button ion-item (click)="logout()" class="btn-profile-menu ion-activatable ripple-parent logout-btn" lines="none">
+        <ion-icon name="log-out"></ion-icon>
+        <span class="menu-label">Logout</span>
+      </button>
+    </li>
+  </ul>
+</div>
+<ion-nav #content [root]="rootPage"></ion-nav>

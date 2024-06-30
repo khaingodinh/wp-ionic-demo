@@ -1,0 +1,25 @@
+<ion-content padding class="login-page-content">
+  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-icon name="ionic" size="large"></ion-icon>
+    </ion-row>
+    <br>
+    <ion-row justify-content-center>
+      <h1>WP Ionic Demo</h1>
+    </ion-row>
+
+    <ion-row justify-content-center class="ion-margin-top">
+      <ion-col col-12 col-md-6 col-lg-2>
+        <div class="login-form">
+          <ion-item>
+            <ion-input autocomplete="off" type="text" [(ngModel)]="username" placeholder="Username"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input autocomplete="off" type="password" [(ngModel)]="password" placeholder="Password"></ion-input>
+          </ion-item>
+          <button ion-button block class="ion-margin-top btn-login" (click)="handleLogin()">Login</button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
